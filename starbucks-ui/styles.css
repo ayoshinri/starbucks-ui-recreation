@@ -1,0 +1,477 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* prevent horizontal scrollbars */
+}
+
+.page-wrapper {
+    transform: scale(1.5);   /* 150% zoom */
+    transform-origin: top left;
+    width: 66.66%;           /* compensate so it fits viewport */
+}
+
+
+.navbar-left svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar {
+    margin-right: 100px;
+    padding: 10px 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.navbar-left a, .navbar-right a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #006241;
+}
+
+.navbar-right div {
+    font-weight: 600;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.find-a-store {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 70px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.sign-in:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: black;
+}
+
+.join-now {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 70px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.join-now:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: black;
+}
+
+.coffee-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: #32462f;
+    color: white;
+    text-align: center;
+    height: 8px;
+    padding: 40px 20px;
+    width: 963px;
+    margin: 0 auto;
+}
+
+.coffee-banner p {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease; 
+    border-radius: 25px;
+}
+
+.order-button:hover {
+    background-color: #4caf7d;
+    color: white;
+}
+
+.promo-section {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.promo-section img {
+    flex: 1;
+    height: 100%;
+    width: 200%;
+    max-width: 500px;
+    object-fit:cover;
+}
+
+.promo-text {
+    flex: 1;
+    max-width: 462px;
+    background-color: #9e0025;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.promo-text h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.promo-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.promo-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.promobutton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #006241;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+
+.promobutton:hover {
+background-color: rgba(128, 128, 128, 0.3);
+color: white;
+}
+
+.learn-more {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: row-reverse; /* flips order: image on right, text on left */
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.learn-more img {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.learn-text  {
+    flex: 1;
+    max-width: 462px;
+    background-color: #9e0025;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.learn-more h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.learn-more p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.learn-more a {
+    text-decoration: none;
+    color: white;
+}
+
+.learnbutton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #006241;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.learnbutton:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+}
+
+.send-holiday {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.send-holiday img {
+    flex: 1;
+    height: 100%;
+    width: 200%;
+    max-width: 500px;
+    object-fit:cover;
+}
+
+.holiday-text {
+    flex: 1;
+    max-width: 462px;
+    background-color: #006242;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.holiday-text h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.holiday-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.holiday-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.holidaybutton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #006241;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.holidaybutton:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+}
+
+.little-bite {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: row-reverse; /* flips order: image on right, text on left */
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.little-bite img {
+    flex: 1;
+    height: 100%;
+    width: 200%;
+    max-width: 500px;
+    object-fit:cover;
+}
+
+.bite-text {
+    flex: 1;
+    max-width: 462px;
+    background-color: #006242;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.bite-text h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bite-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.bite-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.bitebutton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #006241;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.bitebutton:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+}
+
+.free-cup {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.free-cup img {
+    flex: 1;
+    height: 100%;
+    width: 200%;
+    max-width: 500px;
+    object-fit:cover;
+}
+
+.cup-text {
+    flex: 1;
+    max-width: 462px;
+    background-color: #006242;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.cup-text h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cup-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.cup-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.cupbutton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 150px;
+    padding: 10px 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #006241;
+    font-weight: 1000;
+    transition: all 0.3s ease; 
+    border-radius: 20px;
+}
+
+.cupbutton:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
